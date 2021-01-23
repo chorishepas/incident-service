@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${db.host}:${db.port}/${db.database}
+    username: demo
+    password: demo
+    driver-class-name: org.postgresql.Driver
+  liquibase.changeLog: classpath:db/changelog/db.changelog-master.xml
+db:
+  host: localhost
+  port: 5432
+  database: demo
+meteostat-api:
+  api-key: uj4zXvIBtWH7eLuS5BQdO7ozBsGqkLpz
+  url: https://api.meteostat.net/v2/point/hourly
+
